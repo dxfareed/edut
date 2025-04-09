@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## TriviaBase
 
-## Getting Started
+TriviaBase is a Q & A platform, which can be used at Events, Communities (online & offline), Social groups to bring the audience together to learn, network, and also get Rewards from participating.
 
-First, run the development server:
+```js
+// Deployed contracts on Educhain Testnet:
+const TRIVIA_BASE_TOKEN = ""; 
+const TRIVIA_BASE = "";
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h3>How to use <a href="https://edu-trivia.vercel.app/">TriviaBase</a> as host:</h3>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+<i>Claim <a href="https://edu0trivia0faucet.vercel.app/">$trib</a> token to interact with the platform</i>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Steps:
+    TLDR; (view the video setup below).
+1. Connect your wallet to sign in
 
-## Learn More
+2. Select host a game
 
-To learn more about Next.js, take a look at the following resources:
+3. Pick a mode either Fun or Reward mode. <br/>
+    i. Fun mode: rewards are either souvenirs or anything the host wants to give out.
+   <br/>
+    ii. Reward mode: rewards are the $TRIB tokens.
+<br/>
+5. Set the question and answer or Autogenerate question with our AI by just inputting the topic of choice.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6. If reward mode, you set the reward pool amount, i.e. the amount of $TRIB tokens you want to give out.<br/>
+    i. send the $TRIB tokens to the contract.<br/>
+    ii. wait for the wallet pop up to sign the transaction<br/>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+7. If transaction successful, a random unique code is generated as `TBPABC12`<br/>
 
-## Deploy on Vercel
+8. Share the code with your audience to participate.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+9. The audience can now participate in the game by entering the code.<br/>
+10. After the game is over, the $TRIB tokens are distributed to the winners automatically.<br/>
+    - how rewards are distributed to winners:<br/>
+    Assume the host set the reward pool to 100 $TRIB tokens.<br/>
+    i. the first place gets 50% of the reward pool. (50 $TRIB tokens)<br/>
+    ii. the second place gets 30% of the reward pool. (30 $TRIB tokens)<br/>
+    iii. the third place gets 20% of the reward pool. (20 $TRIB tokens)<br/>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+<h3>How to use <a href="https://edu-trivia.vercel.app/">TriviaBase</a> as a player:</h3>
+
+Steps:
+
+1. Connect your wallet to sign in.
+2. Select join a game.
+3. Enter the code shared by the host to join the game.
+4. Answer the questions and submit.
+5. If you are part of the top 3 winners, you will receive the rewards automatically to your wallet.
+
