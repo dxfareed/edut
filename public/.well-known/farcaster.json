@@ -1,0 +1,38 @@
+{
+    "accountAssociation": {
+      "header": "eyJhbGciOiJIUzI1NiJ9",
+      "payload": "eyJkb21haW4iOiAiZXhhbXBsZS5jb20ifQ==", 
+      "signature": "sIhH8fuB9b1kb8qXoq_8xBGf9Yc_9pF9_a0edQxVr7g="
+    },
+    "frame": {
+      "version": "next",
+      "imageUrl": "https://triviabase.xyz/ico.png",
+      "button": {
+        "title": "Start",
+        "action": {
+          "type": "launch_frame",
+          "name": "TriviaBase",
+          "url": "https://triviabase.xyz/pages/dashboard",
+          "splashImageUrl": "https://triviabase.xyz/favicon.ico",
+          "splashBackgroundColor": "#eeeeee"
+        }
+      }
+    },
+    "triggers": [
+      {
+        "type": "button_click",
+        "action": {
+          "type": "open_frame",
+          "frameUrl": "https://triviabase.xyz/pages/dashboard"
+        }
+      },
+      {
+        "type": "page_load",
+        "action": {
+          "type": "show_frame",
+          "frameUrl": "https://triviabase.xyz/pages/dashboard"
+        }
+      }
+    ]
+  }
+  

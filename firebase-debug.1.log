@@ -1,0 +1,38 @@
+[debug] [2024-11-14T11:05:27.265Z] ----------------------------------------------------------------------
+[debug] [2024-11-14T11:05:27.271Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cleme\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-11-14T11:05:27.272Z] CLI Version:   13.20.2
+[debug] [2024-11-14T11:05:27.272Z] Platform:      win32
+[debug] [2024-11-14T11:05:27.272Z] Node Version:  v20.11.1
+[debug] [2024-11-14T11:05:27.273Z] Time:          Thu Nov 14 2024 12:05:27 GMT+0100 (West Africa Standard Time)
+[debug] [2024-11-14T11:05:27.273Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-14T11:05:27.460Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-14T11:05:27.461Z] > authorizing via signed-in user (clementakhimien25@gmail.com)
+[debug] [2024-11-14T11:05:27.462Z] [iam] checking project trivialbased for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-14T11:05:27.467Z] Checked if tokens are valid: true, expires at: 1731583750241
+[debug] [2024-11-14T11:05:27.467Z] Checked if tokens are valid: true, expires at: 1731583750241
+[debug] [2024-11-14T11:05:27.470Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/trivialbased:testIamPermissions [none]
+[debug] [2024-11-14T11:05:27.470Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/trivialbased:testIamPermissions x-goog-quota-user=projects/trivialbased
+[debug] [2024-11-14T11:05:27.471Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/trivialbased:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-14T11:05:31.258Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/trivialbased:testIamPermissions 200
+[debug] [2024-11-14T11:05:31.259Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/trivialbased:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-14T11:05:31.262Z] Checked if tokens are valid: true, expires at: 1731583750241
+[debug] [2024-11-14T11:05:31.262Z] Checked if tokens are valid: true, expires at: 1731583750241
+[debug] [2024-11-14T11:05:31.263Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/trivialbased [none]
+[debug] [2024-11-14T11:05:32.524Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/trivialbased 200
+[debug] [2024-11-14T11:05:32.524Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/trivialbased {"projectId":"trivialbased","projectNumber":"23476738877","displayName":"TrivialBased","name":"projects/trivialbased","resources":{"hostingSite":"trivialbased","realtimeDatabaseInstance":"trivialbased-default-rtdb"},"state":"ACTIVE","etag":"1_3fb06886-44b0-4c98-b7f4-3e9adf198273"}
+[debug] [2024-11-14T11:05:44.847Z] Checked if tokens are valid: true, expires at: 1731583750241
+[debug] [2024-11-14T11:05:44.848Z] Checked if tokens are valid: true, expires at: 1731583750241
+[debug] [2024-11-14T11:05:44.849Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/trivialbased/sites pageToken=&pageSize=10
+[debug] [2024-11-14T11:05:48.247Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/trivialbased/sites 200
+[debug] [2024-11-14T11:05:48.248Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/trivialbased/sites {"sites":[{"name":"projects/trivialbased/sites/trivialbased","defaultUrl":"https://trivialbased.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-11-14T11:05:48.250Z] Checked if tokens are valid: true, expires at: 1731583750241
+[debug] [2024-11-14T11:05:48.251Z] Checked if tokens are valid: true, expires at: 1731583750241
+[debug] [2024-11-14T11:05:48.251Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/trivialbased/sites 
+[debug] [2024-11-14T11:05:48.710Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/trivialbased/sites 200
+[debug] [2024-11-14T11:05:48.710Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/trivialbased/sites {"sites":[{"name":"projects/trivialbased/sites/trivialbased","defaultUrl":"https://trivialbased.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-11-14T11:05:48.711Z] Checked if tokens are valid: true, expires at: 1731583750241
+[debug] [2024-11-14T11:05:48.712Z] Checked if tokens are valid: true, expires at: 1731583750241
+[debug] [2024-11-14T11:05:48.712Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/trivialbased/webApps/-/config [none]
+[debug] [2024-11-14T11:05:51.435Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/trivialbased/webApps/-/config 200
+[debug] [2024-11-14T11:05:51.436Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/trivialbased/webApps/-/config {"projectId":"trivialbased","appId":"1:23476738877:web:5d6e76b7614626518a8354","databaseURL":"https://trivialbased-default-rtdb.firebaseio.com","storageBucket":"trivialbased.firebasestorage.app","apiKey":"AIzaSyAOyCXTlqrogx99bx2TppEhSZKq0S2INgQ","authDomain":"trivialbased.firebaseapp.com","messagingSenderId":"23476738877","measurementId":"G-Y9GH0H2N87"}
