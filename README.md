@@ -4,8 +4,12 @@ TriviaBase is a Q & A platform, which can be used at Events, Communities (online
 
 ```js
 // Deployed contracts on Educhain Testnet:
-const TRIVIA_BASE_TOKEN = "0xAAd7B559419C5Fd7613fE0E3FE11363a01D38E88"; 
+const TRIVIA_BASE_TOKEN = "0xAAd7B559419C5Fd7613fE0E3FE11363a01D38E88";
+//https://edu-chain-testnet.blockscout.com/address/0xAAd7B559419C5Fd7613fE0E3FE11363a01D38E88
+
 const TRIVIA_BASE_FACTORY_CONTRACT = "0xDdfC017Ba77F1cB1C67ac904DB4DF1ef58E68e89";
+//https://edu-chain-testnet.blockscout.com/address/0xDdfC017Ba77F1cB1C67ac904DB4DF1ef58E68e89
+
 //each game created is a contract.
 
 ```
